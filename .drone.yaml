@@ -1,0 +1,14 @@
+kind: pipeline
+name: conformance-test
+
+steps:
+
+- name: validation
+  image: garethr/kubeval
+  commands:
+    - kubeval --strict deployment/*
+
+- name: testing
+  image: instrumenta/conftest:latest
+  commands:
+  - conftest test deployment/*

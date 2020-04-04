@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: hello-kubernetes
-        image: macintoshprime/hello-kubernetes:v8
+        image: macintoshprime/hello-kubernetes:v7
         ports:
         - containerPort: 8080
         livenessProbe:

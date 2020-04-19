@@ -13,3 +13,6 @@ spec:
       - backend:
           serviceName: quickstart-kb-http
           servicePort: 5601
+  tls:
+  - hosts:
+    -  kibana.chriscarty.com

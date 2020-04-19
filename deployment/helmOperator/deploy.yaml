@@ -155,4 +155,4 @@ spec:
         # Comment out to enable a single Helm version that can be targeted
         # by a `HelmRelease`; defaults to `--enabled-helm-versions=v2,v3`.
         #
-        # - --enabled-helm-versions=v3
+        - --enabled-helm-versions=v3
